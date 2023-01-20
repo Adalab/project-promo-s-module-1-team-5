@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.title_team {
+.team-title {
     font-size: 24px;
     color: #14D9C4;
     font-family: "Rubik", sans-serif;
@@ -16,7 +16,7 @@
     max-width: 89px;
 }
 
-.description_team {
+.team-description {
     margin: 15px 0 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +65,7 @@
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-.presentación {
+.presentation {
     display: flex;
     flex-direction: column;
     max-width: 320px;
@@ -76,7 +76,7 @@
     border: 1px solid red;
 }
 
-.menu-redes {
+.menu-socials {
     display: flex;
     justify-content: space-between;
     width: 120px;
@@ -85,7 +85,3 @@
     margin: 30px auto 0px auto;
 }
 
-.logo-redes {
-    height: 20px;
-    width: 22px;
-}
