@@ -1,0 +1,91 @@
+.team {
+    width: 100%;
+    background-color: white;
+    padding: 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title_team {
+    font-size: 24px;
+    color: #14D9C4;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    line-height: 1.88;
+    max-width: 89px;
+}
+
+.description_team {
+    margin: 15px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #54585A;
+    line-height: 1.5;
+}
+
+.rectangle {
+    width: 30px;
+    height: 30px;
+    margin: -45px auto 45px auto;
+    transform: rotate(45deg);
+    background-color: white;
+    /*position: absolute;*/
+}
+
+.strengths {
+    margin: 0 0 30px 0;
+}
+
+.strengths-weaknesses {
+    width: 100%;
+    background-color: rgba(184, 184, 185, 0.4);
+    /*opacity: 0.2;*/
+    padding: 30px 15px 45px 15px;
+}
+
+.title {
+    font-size: 22px;
+    color: #099D8D;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    line-height: 2.05;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto 20px auto;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.presentación {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    /* justify-content: center;
+    align-content: center;*/
+    text-align: center;
+    margin: 10px auto 50px auto;
+    border: 1px solid red;
+}
+
+.menu-redes {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 20px;
+    border: 1px solid red;
+    margin: 30px auto 0px auto;
+}
+
+.logo-redes {
+    height: 20px;
+    width: 22px;
+}
