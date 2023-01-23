@@ -2,6 +2,10 @@
   font-size: 62.5%;
 }
 
+/*.section-team {
+  background-color: white;
+  width: 100%;*/ /*Para poner el cuadrado
+}*/
 .team {
   width: 100%;
   background-color: white;
@@ -9,6 +13,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /*position: relative;*/ /*Para poner el cuadrado*/
+  /*flex-direction: column;
+  align-items:center; Dos opciones.....con column+align-items o con row+wrap+justify-content*/
 }
 
 .team-title {
@@ -22,8 +29,8 @@
 
 .team-description {
   margin: 1.5rem 0 3rem 0;
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
 }
 
 .p {
@@ -41,6 +48,7 @@
   transform: rotate(45deg);
   background-color: white;
   /*position: absolute;*/
+  /*bottom: 0;*/
 }
 
 .strengths {
@@ -87,4 +95,47 @@
   height: 20px;
   border: 1px solid red;
   margin: 30px auto 0px auto;
+}
+
+@media (min-width: 768px) {
+  .team {
+    padding: 4.5rem 4.5rem 3rem 4.5rem;
+  }
+  .team-title {
+    color: #099d8d;
+  }
+  .strengths-weaknesses {
+    padding: 4.5rem 4.5rem 6rem 4.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title {
+    margin-bottom: 1.5rem;
+  }
+  .strengths .p {
+    max-width: 32.4rem;
+  }
+  .weaknesses .p {
+    max-width: 32.4rem;
+  }
+  .rectangle {
+    margin: -6rem auto 4.5rem auto;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    padding: 4.5rem 30rem 6rem 30rem;
+  }
+  .team-description {
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .strengths-weaknesses {
+    padding: 4.5rem 4.5rem 6rem 4.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
 }

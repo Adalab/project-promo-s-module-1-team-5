@@ -1,0 +1,162 @@
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';*/
+
+
+
+:root {
+    font-size: 62.5%;
+}
+
+/*.section-team {
+  background-color: white;
+  width: 100%;*/
+/*Para poner el cuadrado
+}*/
+.team {
+    width: 100%;
+    background-color: white;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*position: relative;*/
+    /*Para poner el cuadrado*/
+    /*flex-direction: column;
+  align-items:center; Dos opciones.....con column+align-items o con row+wrap+justify-content*/
+}
+
+.team-title {
+    font-size: 2.4rem;
+    color: #14d9c4;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    line-height: 1.88;
+    max-width: 8.9rem;
+}
+
+.team-description {
+    margin: 1.5rem auto 3rem auto;
+    /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #54585a;
+    line-height: 1.5;
+}
+
+.rectangle {
+    width: 3rem;
+    height: 3rem;
+    margin: -4.5rem auto 4.5rem auto;
+    transform: rotate(45deg);
+    background-color: white;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+
+.strengths {
+    margin: 0 0 3rem 0;
+}
+
+.strengths-weaknesses {
+    width: 100%;
+    background-color: rgba(184, 184, 185, 0.4);
+    /*opacity: 0.2;*/
+    padding: 3rem 1.5rem 4.5rem 1.5rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: #099d8d;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    line-height: 2.05;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto 20px auto;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    /* justify-content: center;
+    align-content: center;*/
+    text-align: center;
+    margin: 10px auto 50px auto;
+    border: 1px solid red;
+}
+
+.menu-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 20px;
+    border: 1px solid red;
+    margin: 30px auto 0px auto;
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding: 4.5rem 4.5rem 3rem 4.5rem;
+    }
+
+    .team-title {
+        color: #099d8d;
+    }
+
+    .strengths-weaknesses {
+        padding: 4.5rem 4.5rem 6rem 4.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .title {
+        margin-bottom: 1.5rem;
+    }
+
+    .strengths .p {
+        max-width: 32.4rem;
+    }
+
+    .weaknesses .p {
+        max-width: 32.4rem;
+    }
+
+    .rectangle {
+        margin: -6rem auto 4.5rem auto;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        padding: 4.5rem 30rem 6rem 30rem;
+    }
+
+    .team-description {
+        margin: 1.5rem 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .strengths-weaknesses {
+        padding: 4.5rem 4.5rem 6rem 4.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
