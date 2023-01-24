@@ -1,11 +1,14 @@
 .hero {
   padding-top: 0px;
-   position: relative;
+  position: relative;
 }
-.hero-img{
-  max-width: 100%;
-  margin: 0 auto;
+
+.hero-img {
+  width: 100vw;
+  height: 42rem;
+  object-fit: cover;
 }
+
 .hero-text{
   background-color: white;
   font-weight: 600;
@@ -21,7 +24,7 @@
 
 @media all and (min-width: 768px) {
 
-.hero-text {
-  margin: 0 46px 0 281px
-}
+  .hero-text {
+    margin: 0 46px 0 281px
+  }
 }

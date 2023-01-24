@@ -1,13 +1,8 @@
-/*.section-team {
-  background-color: white;
-  width: 100%;*/
-/*Para poner el cuadrado
-}*/
 .team {
     width: 100%;
     background-color: white;
     padding: 0 1.5rem 3rem 1.5rem;
-
+    
 }
 
 .team-title {
@@ -38,8 +33,6 @@
     margin: -4.5rem auto 4.5rem auto;
     transform: rotate(45deg);
     background-color: white;
-    /*position: absolute;*/
-    /*bottom: 0;*/
 }
 
 .strengths {
@@ -49,7 +42,6 @@
 .strengths-weaknesses {
     width: 100%;
     background-color: rgba(184, 184, 185, 0.4);
-    /*opacity: 0.2;*/
     padding: 3rem 1.5rem 4.5rem 1.5rem;
 }
 
