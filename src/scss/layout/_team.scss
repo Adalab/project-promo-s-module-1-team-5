@@ -6,29 +6,22 @@
 .team {
     width: 100%;
     background-color: white;
-    padding: 3rem 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*position: relative;*/
-    /*Para poner el cuadrado*/
-    /*flex-direction: column;
-  align-items:center; Dos opciones.....con column+align-items o con row+wrap+justify-content*/
+    padding: 0 1.5rem 3rem 1.5rem;
+
 }
 
 .team-title {
     font-size: 2.4rem;
     color: #14d9c4;
     font-family: "Rubik", sans-serif;
-    text-align: center;
     line-height: 1.88;
     max-width: 8.9rem;
+    margin: 0 auto;
 }
 
 .team-description {
     margin: 1.5rem auto 3rem auto;
-    /*display: flex;
-  flex-wrap: wrap;*/
+   
 }
 
 .p {
@@ -73,26 +66,6 @@
     height: 200px;
     margin: 10px auto 20px auto;
     background-color: rgba(0, 0, 0, 0.08);
-}
-
-.presentation {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    /* justify-content: center;
-    align-content: center;*/
-    text-align: center;
-    margin: 10px auto 50px auto;
-    border: 1px solid red;
-}
-
-.menu-socials {
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
-    height: 20px;
-    border: 1px solid red;
-    margin: 30px auto 0px auto;
 }
 
 @media (min-width: 768px) {

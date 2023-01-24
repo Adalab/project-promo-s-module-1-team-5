@@ -1,19 +1,17 @@
 .presentation {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-content: center;*/
     text-align: center;
     margin: 1rem auto 5rem auto;
 }
 
 .who {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #099D8D;
     font-family: "Rubik", sans-serif;
-    text-align: center;
+    margin: 4.5rem auto;
     line-height: 1.88;
-    max-width: 300px;
+    max-width: 30rem;
 }
 
 .border {
@@ -26,13 +24,10 @@
 
 .profile-picture {
     margin: 5px auto;
-    /*height: auto;
-    max-width: 95%;
-    border-radius: 4px;*/
     object-fit: cover;
     width: 19rem;
     height: 19rem;
-    border-radius: 3px;
+    border-radius: 0.3rem;
 }
 
 .name {
@@ -78,16 +73,16 @@
     color: #099D8D
 }
 
-@media screen and (min-width: 76.8rem) {
-    .body {
-        max-width: 76.7rem;
+@media screen and (min-width: 76rem) {
+    /*.body {
         margin: 0 auto;
-    }
+    }*/
 
     .presentation {
         flex-direction: row;
         align-content: flex-start;
         padding: 2.813rem;
+        max-width: 76.7rem;
     }
 
     .border {
@@ -131,20 +126,18 @@
     }
 }
 
-@media screen and (min-width: 100rem) {
-    .body {
-        max-width: 100rem;
-        margin: 0 auto;
-    }
+@media screen and (min-width: 120rem) {
 
     .presentation {
+        max-width: 100rem;
+        margin: 0 auto;
         flex-direction: row;
         align-content: flex-start;
         padding: 0 rem 8.625rem;
     }
 
     .border {
-        margin: 0rem 1rem
+        margin: 0rem 3rem;
     }
 
     .info-programmers .name,

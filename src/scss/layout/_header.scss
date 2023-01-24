@@ -1,19 +1,16 @@
 .header {
   background-color: #099D8D;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
+  text-align: center; 
   opacity: 0.95;
   position: fixed;
+  z-index: 2; 
 }
 
 .header-title {
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
   font-size: 16px;
   color: white;
 }
@@ -35,10 +32,8 @@
 
 @media all and (min-width: 768px) {
   .header {
-    background-color: #099D8D;
     display: flex;
-    flex-direction: row;
-    height: 60px;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -49,7 +44,8 @@
   .header-ul {
     width: 300px;
     background-color: #099D8D;
-    margin-left: 250px;
+    margin: 22px 25px 22px 0;
+    height: auto;
   }
 
   .hero-text {
