@@ -74,7 +74,7 @@
     color: #099D8D
 }
 
-@media screen and (min-width: 76rem) {
+@media screen and (min-width: 768px) {
     /*.body {
         margin: 0 auto;
     }*/
@@ -82,8 +82,9 @@
     .presentation {
         flex-direction: row;
         align-content: flex-start;
-        padding: 2.813rem;
-        max-width: 76.7rem;
+        justify-content: center;
+        max-width: 768px;
+        gap: 30px;
     }
 
     .border {
@@ -95,6 +96,10 @@
         text-align: left;
     }
 
+    .presentation .p {
+        max-width: 442px;
+    }
+
     .menu-socials {
         margin: 1.5rem 0.5rem;
     }
@@ -102,6 +107,7 @@
     div.right {
         display: flex;
         flex-direction: row-reverse;
+        gap: 30px;
     }
 
     #info-marina,
@@ -127,14 +133,14 @@
     }
 }
 
-@media screen and (min-width: 120rem) {
+@media screen and (min-width: 1200px) {
 
     .presentation {
-        max-width: 100rem;
-        margin: 0 auto;
+        max-width: 1400px;
         flex-direction: row;
         align-content: flex-start;
-        padding: 0 rem 8.625rem;
+        justify-content: center;
+        
     }
 
     .border {
