@@ -1,22 +1,20 @@
+#team{
+    scroll-margin-top: 110px;
+}
 .team {
     width: 100%;
     background-color: white;
-    padding: 0 1.5rem 3rem 1.5rem;
-    
+    margin-bottom: 30px;
 }
 
 .team-title {
     font-size: 2.4rem;
+    text-transform: uppercase;
     color: #14d9c4;
     font-family: "Rubik", sans-serif;
     line-height: 1.88;
-    max-width: 8.9rem;
-    margin: 0 auto;
-}
-
-.team-description {
-    margin: 1.5rem auto 3rem auto;
-   
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .p {
@@ -28,21 +26,20 @@
 }
 
 .rectangle {
-    width: 3rem;
-    height: 3rem;
-    margin: -4.5rem auto 4.5rem auto;
+    width: 30px;
+    height: 30px;
+    margin: -45px auto 45px auto;
     transform: rotate(45deg);
     background-color: white;
 }
 
-.strengths {
-    margin: 0 0 3rem 0;
+.strengths-weaknesses {
+    background-color: rgba(184, 184, 185, 0.4);
+    padding: 30px 0 45px 0;
 }
 
-.strengths-weaknesses {
-    width: 100%;
-    background-color: rgba(184, 184, 185, 0.4);
-    padding: 3rem 1.5rem 4.5rem 1.5rem;
+.strengths {
+    margin: 0 0 30px 0;
 }
 
 .title {
@@ -53,60 +50,56 @@
     line-height: 2.05;
 }
 
-.box {
+/*.box {
     width: 200px;
     height: 200px;
     margin: 10px auto 20px auto;
     background-color: rgba(0, 0, 0, 0.08);
-}
+}*/
 
 @media (min-width: 768px) {
+    #team {
+        scroll-margin-top: 80px;
+    }
     .team {
-        padding: 4.5rem 4.5rem 3rem 4.5rem;
+        padding-bottom: 30px;
     }
 
     .team-title {
         color: #099d8d;
     }
-
-    .strengths-weaknesses {
-        padding: 4.5rem 4.5rem 6rem 4.5rem;
+    
+    .strengths-weaknesses .container {
         display: flex;
-        justify-content: space-around;
     }
 
+    .strengths-weaknesses .container>* {
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    
     .title {
-        margin-bottom: 1.5rem;
+        margin-bottom: 15px;
     }
 
-    .strengths .p {
-        max-width: 32.4rem;
+    .strengths {
+        margin-right: 22.5px;
     }
 
-    .weaknesses .p {
-        max-width: 32.4rem;
-    }
-
-    .rectangle {
-        margin: -6rem auto 4.5rem auto;
-        position: absolute;
+    .weaknesses {
+        margin-left: 22.5px;
     }
 }
 
 @media (min-width: 1200px) {
     .team {
-        padding: 4.5rem 30rem 6rem 30rem;
+        padding-bottom: 60px;    
     }
 
-    .team-description {
-        margin: 1.5rem 0 0 0;
-        display: flex;
-        flex-wrap: wrap;
+    .team .p{
+        max-width: 600px;
+        margin: 0 auto;
     }
 
-    .strengths-weaknesses {
-        padding: 4.5rem 4.5rem 6rem 4.5rem;
-        display: flex;
-        justify-content: space-around;
-    }
 }

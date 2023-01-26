@@ -10,12 +10,31 @@
 
 
 :root {
-    font-size: 62.5%
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
+
+
 
 @import 'core/reset';
 @import 'layout/header';
 @import 'layout/hero';
 @import 'layout/team';
 @import 'layout/who';
+@import 'layout/form';
 @import 'layout/footer';
+
+.container{
+    margin-left:15px;
+    margin-right:15px;
+    
+    @media all and (min-width:768px){
+        margin-left: 45px;
+        margin-right: 45px;
+        
+    }
+    @media all and (min-width:1200px) {
+        margin-left: 138px;
+        margin-right: 138px;
+    }
+}

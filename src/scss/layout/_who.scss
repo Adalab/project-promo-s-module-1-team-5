@@ -1,3 +1,6 @@
+#who {
+    scroll-margin-top: 12rem;
+}
 .presentation {
     display: flex;
     flex-direction: column;
@@ -91,8 +94,7 @@
         margin: 0rem 1rem
     }
 
-    .info-programmers .name,
-    .p {
+    .info-programmers .name, .info-programmers .p {
         text-align: left;
     }
 
@@ -147,8 +149,7 @@
         margin: 0rem 3rem;
     }
 
-    .info-programmers .name,
-    .p {
+    .info-programmers .name, .info-programmers .p {
         text-align: left;
     }
 
