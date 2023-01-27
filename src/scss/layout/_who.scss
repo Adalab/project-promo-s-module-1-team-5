@@ -1,5 +1,5 @@
 #who {
-    scroll-margin-top: 12rem;
+    scroll-margin-top: 110px;
 }
 .presentation {
     display: flex;
@@ -10,6 +10,7 @@
 
 .who {
     font-size: 2.4rem;
+    text-transform: uppercase;
     color: #099D8D;
     font-family: "Rubik", sans-serif;
     margin: 4.5rem auto 2.5rem auto;
@@ -81,6 +82,11 @@
     /*.body {
         margin: 0 auto;
     }*/
+
+    #who{
+        scroll-margin-top: 80px;
+        }
+    
 
     .presentation {
         flex-direction: row;
