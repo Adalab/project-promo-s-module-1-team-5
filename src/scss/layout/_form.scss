@@ -13,14 +13,14 @@
     color: #54585a;
     line-height: 1.5;
     
-    &__big{
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+    &-big{
+        font-size: 1.6rem;
+        margin: 0 20px 15px 20px;
     }
     
-    &__small{
-    font-size: 1.2rem;
-    margin-bottom: 58px;
+    &-small{
+        font-size: 1.2rem;
+        margin-bottom: 55px;
     }
 }
 
@@ -29,55 +29,47 @@
 }
 
 .form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.input {
     font-family: "Open Sans", sans-serif;
     color: #54585a;
     line-height: normal;
     font-size: 1.4rem;
+}
 
-    &__label{
-        width: 100%;
-        margin-bottom: 7px;
+.box{
+    height: 45px;
+    width:98%;
+    margin-top: 8px;
+    margin-bottom: 13px;
+    border: 1.8px solid #b8b8b9;
+    text-indent: 15px;
+
+    &::placeholder{
+        color: #b8b8b9;
     }
-
-    &__box{
-        height: 45px;
-        width:98%;
-        margin-bottom: 13px;
+    
+    &__big{
+        font-family: 'Open Sans', sans-serif;
+        width: 98%;
+        margin-bottom: 30px; 
+        margin-top: 8px;
         border: 1.8px solid #b8b8b9;
         text-indent: 15px;
-
-        &::placeholder{
-            color: #b8b8b9;
-        }
         
-        &__big{
-            width: 98%;
-            margin-bottom: 30px; 
-            border: 1.8px solid #b8b8b9;
-            
-            &::placeholder {
-                color: #b8b8b9;
-            }
+        &::placeholder {
+            color: #b8b8b9;
         }
     }
 }
 
 .button{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    width: 100%;
+    height: 45px;
     font-size: 1.6rem;
     text-transform: uppercase;
     color: white;
     background-color: #099D8D;
     border: 1px solid #099D8D;
     border-radius: 4px;
-    height: 45px;
     margin-bottom: 60px;
 }
 
@@ -89,18 +81,38 @@
 
     .button{
         width: 45%;
-        
-    }
-    .form :last-child{
-        align-items: flex-end;
+        position: relative;
+        left: 55%;   
     }
 }
 
 @media all and (min-width:1200px) {
     .main__contact .container {
-            margin: 0 300px;
+        margin: 0 300px;
     }
 
-    
-    
-}        
+    .form-grid{
+        width: 98%;
+        display: grid;
+        grid-template-columns: 60% 10% 30%;
+        grid-template-rows: 25px 70px;
+        align-items: center;
+    }
+ 
+    .label-email{
+        grid-row: 1/2;
+        grid-column: 1/2; 
+    }
+    .box-email {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .label-phone{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+     .box-phone{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+}    
