@@ -79,10 +79,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    /*.body {
-        margin: 0 auto;
-    }*/
-
+   
     #who{
         scroll-margin-top: 80px;
         }
@@ -97,7 +94,14 @@
     }
 
     .border {
-        margin: 0rem 1rem
+        margin: 0rem 1rem;
+        width: 21rem;
+        height: 21rem;
+    }
+
+    .profile-picture {
+        width: 20rem;
+        height: 20rem;
     }
 
     .info-programmers .name, .info-programmers .p {
@@ -144,15 +148,25 @@
 @media screen and (min-width: 1200px) {
 
     .presentation {
-        max-width: 1400px;
+        width: 1400px;
         flex-direction: row;
         align-content: flex-start;
         justify-content: center;
-        
     }
 
     .border {
+        width: 28rem;
+        height: 28rem;
         margin: 0rem 3rem;
+    }
+
+    .profile-picture {
+        width: 27rem;
+        height: 27rem;
+    }
+
+    .presentation .p {
+        max-width: 430px;
     }
 
     .info-programmers .name, .info-programmers .p {
