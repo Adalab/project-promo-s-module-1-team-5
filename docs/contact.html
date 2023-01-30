@@ -28,8 +28,8 @@
         </ul>
       </nav>
     </header>
-    <section id="hero" class="hero">
-        <figure class="hero-figure">
+    <section>
+        <figure>
             <img class="hero-img" src="./assets/images/contacto.jpg" alt="Uluru">
         </figure>
     </section>
@@ -39,41 +39,44 @@
             <div class="container">
                 <h1 class="form__title">Contacto</h1>
                 <article class="form__description">
-                    <p class="form__description__big">¿Te interesa nuestro trabajo? ¿Quieres conocernos mejor? Utiliza este formulario para ponerte en contacto con nosotras.</p>
-                    <p class="form__description__small">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</p>
+                    <p class="form__description-big">¿Te interesa nuestro trabajo? ¿Quieres conocernos mejor? Utiliza este formulario para ponerte en contacto con nosotras.</p>
+                    <p class="form__description-small">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</p>
                 </article>
             </div>
 
             
             <div class="container">
-                <form action="https://dev.adalab.es/api/form" method="POST">
-                    <fieldset class="form">
-                        <label class="input input__label" for="fullName">
-                            Nombre Completo
-                            <span class="asterisk">*</span>
-                        </label>
-                        <input class="input input__box" id="fullName" type="text" name="fullName" placeholder="Nombre...">
-                
-                        <label class="input input__label" for="email">
+                <form action="https://dev.adalab.es/api/form" method="POST" class="form">
+                    <label for="fullName">
+                        Nombre completo
+                        <span class="asterisk">*</span>
+                    </label>
+                    <input class="box" id="fullName" type="text" name="fullName" placeholder="Nombre..." required>
+                        
+                    <fieldset class="form-grid">
+                        <label class="label-email" for="email">
                             Email
                             <span class="asterisk">*</span>
                         </label>
-                        <input class="input input__box" id="email" type="email" name="email" placeholder="nombre.apellidos@mail.com">
+                        <input class="box box-email" id="email" type="email" name="email" placeholder="nombre.apellidos@mail.com" required>
+                        
                 
-                        <label class="input input__label" for="phone">
+                        <label class="label-phone" for="phone">
                             Teléfono
                         </label>
-                        <input class="input input__box" id="phone" type="number" name="phone" placeholder="Ej: 123456789">
-                
-                        <label class="input input__label" for="comments">
-                            Mensaje
-                            <span class="asterisk">*</span>
-                        </label>
-                        <textarea class="input input__box__big" id="comments" name="comments" rows="6" cols="10" placeholder="¿Qué necesitas?"></textarea>
-                
-                        <input class="button" type="submit">
-                
+                        <input class="box box-phone input__box-phone" id="phone" type="number" name="phone" placeholder="Ej: 123456789">
+                        
                     </fieldset>
+                    
+                    <label for="comments">
+                        Mensaje
+                        <span class="asterisk">*</span>
+                    </label>
+                    <textarea class="box__big" id="comments" name="comments" rows="6" cols="10" placeholder="¿Qué necesitas?" required></textarea>
+                        
+                
+                    <input class="button" type="submit">
+                
                 </form>
             </div>
 
