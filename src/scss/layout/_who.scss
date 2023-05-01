@@ -85,13 +85,12 @@
         }
     
 
-    .presentation {
+    /*.presentation {
         flex-direction: row;
         align-content: flex-start;
         justify-content: center;
-        max-width: 768px;
         gap: 30px;
-    }
+    }*/
 
     .border {
         margin: 0rem 1rem;
@@ -104,7 +103,7 @@
         height: 20rem;
     }
 
-    .info-programmers .name, .info-programmers .p {
+    .info-programmers-left .name, .info-programmers-left .p {
         text-align: left;
     }
 
@@ -116,27 +115,25 @@
         margin: 1.5rem 0.5rem;
     }
 
-    div.right {
+    .presentation__right {
         display: flex;
         flex-direction: row-reverse;
         gap: 30px;
     }
 
-    #info-marina,
-    #marina,
-    #p-marina {
+      .presentation__left {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .info-programmers-right .name, .info-programmers-right .p{
         text-align: right;
     }
 
     #socials-marina {
         display: flex;
         justify-content: right;
-    }
-
-    #info-titika,
-    #titika,
-    #p-Titika {
-        text-align: right;
     }
 
     #socials-titika {
@@ -146,14 +143,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-
-    .presentation {
-        /*width: 80%;*/
-        flex-direction: row;
-        align-content: flex-start;
-        /*justify-content: center;*/
-    }
-
     .border {
         width: 28rem;
         height: 28rem;
@@ -177,30 +166,11 @@
         margin: 1.5rem 0.5rem;
     }
 
-    div.right {
-        display: flex;
-        flex-direction: row-reverse;
+    .presentation__right {
+        justify-content: flex-start;
     }
 
-    #info-marina,
-    #marina,
-    #p-marina {
-        text-align: right;
+    .presentation__left {
+        justify-content: flex-start;
     }
-
-    #socials-marina {
-        display: flex;
-        justify-content: right;
-    }
-
-    #info-titika,
-    #titika,
-    #p-Titika {
-        text-align: right;
-    }
-
-    #socials-titika {
-        display: flex;
-        justify-content: right;
-    }
-}
+} 

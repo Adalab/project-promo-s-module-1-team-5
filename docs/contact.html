@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Team 5</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+
+</head>
+
+<body>
+
+    <header class="header">
+      <h1 class="header-title"><a class="header-li-a" href="./index.html#hero">Uluru team</a></h1>
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="header-nav-li"><a class="header-li-a" href="./index.html#team">equipo</a></li>
+          <li class="header-nav-li"><a class="header-li-a" href="./index.html#who">quienes somos</a></li>
+          <li class="header-nav-li"><a class="header-li-a" href="./contact.html">contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+        <figure>
+            <img class="hero-img" src="./assets/images/contacto.jpg" alt="Uluru">
+        </figure>
+    </section>
+
+    <main class="main">
+        <main class="main__contact">
+            <div class="container">
+                <h1 class="form__title">Contacto</h1>
+                <article class="form__description">
+                    <p class="form__description-big">¿Te interesa nuestro trabajo? ¿Quieres conocernos mejor? Utiliza este formulario para ponerte en contacto con nosotras.</p>
+                    <p class="form__description-small">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</p>
+                </article>
+            </div>
+
+            
+            <div class="container">
+                <form action="https://dev.adalab.es/api/form" method="POST" class="form">
+                    <label for="fullName">
+                        Nombre completo
+                        <span class="asterisk">*</span>
+                    </label>
+                    <input class="box" id="fullName" type="text" name="fullName" placeholder="Nombre..." required>
+                        
+                    <fieldset class="form-grid">
+                        <label class="label-email" for="email">
+                            Email
+                            <span class="asterisk">*</span>
+                        </label>
+                        <input class="box box-email" id="email" type="email" name="email" placeholder="nombre.apellidos@mail.com" required>
+                        
+                
+                        <label class="label-phone" for="phone">
+                            Teléfono
+                        </label>
+                        <input class="box box-phone input__box-phone" id="phone" type="number" name="phone" placeholder="Ej: 123456789">
+                        
+                    </fieldset>
+                    
+                    <label for="comments">
+                        Mensaje
+                        <span class="asterisk">*</span>
+                    </label>
+                    <textarea class="box__big" id="comments" name="comments" rows="6" cols="10" placeholder="¿Qué necesitas?" required></textarea>
+                        
+                
+                    <input class="button" type="submit">
+                
+                </form>
+            </div>
+
+        </main>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-copy">Uluru team &copy; 2023</p>
+      <nav class="footer-nav">
+        <ul class="footer-ul">
+          <li class="footer-nav-li"><a class="footer-li-a" href="./index.html#team">equipo</a></li>
+          <li class="footer-nav-li"><a class="footer-li-a" href="./index.html#who">quienes somos</a></li>
+          <li class="footer-nav-li"><a class="footer-li-a" href="./contact.html">contacto</a></li>
+        </ul>
+      </nav>
+      <a href="https://adalab.es/"><img class="footer-img" src="./assets/images/logo-adalab1.png" alt="logo de adalab"></a>
+    </footer>
+
+</body>
+
+</html>

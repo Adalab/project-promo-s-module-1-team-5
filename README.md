@@ -22,13 +22,15 @@ Our project was also supervised by our instructors:
 - Dayana Romero [@dayanare](https://github.com/dayanare)
 - Iván Garrido [@igarrido-adalab](https://github.com/igarrido-adalab) who was also our tutor and Project Owner.
 
-
 ## Table of contents
 
 - Equipo
 - Quiénes somos
 - Contacto
-## Documentation
 
-[Documentation](https://linktodocumentation)
+## Tools
+
+- Programming languages for Web Development: HTML, CSS
+- Preprocessor scripting language: SASS
+- Adalab Web Starter Kit
 
